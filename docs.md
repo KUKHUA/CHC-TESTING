@@ -1,5 +1,5 @@
 # Appye Loader - Docs
-#### Use the *`D`* key to get back here at any time, this will only show the first time you run this Appye version. <br /> Press the *`X`* if you understand. (Look at the top.)
+#### Use the *`D`* key to get back here at any time, use the *`C`* key to load command at any time. <br /> Press the *`X`* if you understand. (Look at the top.)
 ## Commands
 ##### Please note `{` and `}` must be removed when entering a command,<br /> and appName must be exactly how it is in the apps section.
 ### `app-load {appName]`
