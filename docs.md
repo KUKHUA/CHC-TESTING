@@ -10,4 +10,5 @@ This command cloaks the the url in the command. It will open in a new window, an
 `subway_surfers,`
 `d+25,`
 `piped,`
-`google`
+`google,`
+`radiolise`
