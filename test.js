@@ -1,2 +1,2 @@
-alert("Temporarily unavailable.")
+alert("Temporarily unavailable.");
 return;
