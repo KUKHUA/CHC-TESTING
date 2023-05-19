@@ -11,4 +11,5 @@ This command cloaks the the url in the command. It will open in a new window, an
 `d+25,`
 `piped,`
 `google,`
-`radiolise`
+`radiolise,`
+`bitlife`
