@@ -7,7 +7,7 @@ This command loads the app you want. ex: *`app-load subway_surfers`*
 ### `cloak-it {fullUrl}`
 This command cloaks the the url in the command. It will open in a new window, and cloaks as Desmos.
 ## Apps
-`subway_surfers`
-`d+25`
-`piped`
+`subway_surfers,`
+`d+25,`
+`piped,`
 `google`
