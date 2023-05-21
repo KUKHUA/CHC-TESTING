@@ -1,1 +1,2 @@
-
+alert("Appye loading...")
+return;
