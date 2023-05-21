@@ -1,5 +1,5 @@
 // Made by KUKHUA
-const ver = "dev+1.2";
+const ver = "1.2";
 
 // Create a new script element
 const script = document.createElement("script");
