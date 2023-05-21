@@ -1,5 +1,5 @@
 // Made by KUKHUA
-const ver = "1.2";
+const ver = "1.2.1";
 
 // Create a new script element
 const script = document.createElement("script");
@@ -9,7 +9,7 @@ script.src =
   "https://rawcdn.githack.com/nextapps-de/winbox/0.2.6/dist/winbox.bundle.min.js";
   document.head.appendChild(script);
 //event listeners & consts
-const htmlDocs = ''
+const htmlDocs = '';
 const jsonAppString = '{ "apps": { "argName": "", "title": "", "icon": "", "hexColor": "", "url": ""} }';
 const jsonAppObject = JSON.parse(jsonAppString);
 document.addEventListener("keydown", (event) => {
@@ -48,6 +48,7 @@ script.addEventListener("load", function () {
   }
 });
 function cmd() {
+  parsedURL = "";
   // JSON stuff
   // Apps
   jsonAppObject.apps.d25 = { title: "D+25", icon: "https://paste.unit193.net/favicon.ico", hexColor: "#4287f5", url: "https://paste.unit193.net/?18820e835dcfca92#+R9o6//5M3r23lulXQCFEZ3AIuTlKNvbQMML6lXnoM8=" };
@@ -101,7 +102,9 @@ function cmd() {
     
     // Parse input
     if (jsonAppObject.apps[parsedUrl]) {
-      var newUrl = jsonAppObject.apps[parsedUrl].url;
+      newUrl = jsonAppObject.apps[parsedUrl].url;
+    }else {
+      newUrl = parsedURL;
     }
 
     const win = window.open();
@@ -129,7 +132,7 @@ function cmd() {
 
 // search command
 else if (commandIn.startsWith("search ")) {
-    baseSearchURL = "https://searx.garudalinux.org/search?q="
+    baseSearchURL = "https://searx.garudalinux.org/search?q=";
   let inputURI;
   let searchTerm = commandIn.replace("search ", "");
   inputURI = encodeURI(searchTerm);
@@ -178,4 +181,3 @@ else if (commandIn.startsWith("search ")) {
     alert('Error: Command "' + commandIn + '" is not valid. ' + "Please check if you've spelled it incorrectly.");
   }
 }
-
