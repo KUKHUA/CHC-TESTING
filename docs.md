@@ -4,7 +4,7 @@
 ## Commands
 ##### Please note `{` and `}` must be removed when entering a command, <br /> aswell do not include anything in `(` and `)` only include the first word.
 ### `app-load {appName}`
-This command loads the app you want. ex: *`app-load subway_surfers`*
+This command loads the app you want. ex: *`app-load subway`*
 ### `cloak-it {fullUrl || appName}`
 This command cloaks the the url/app-name in the command. It will open in a new window, and cloaks as Desmos. ("||" means "or") ex1: *`cloak-it https://randogamewebsite.com`* ex2: *`cloak-it subway`*
 ### `about`
