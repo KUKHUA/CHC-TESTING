@@ -1,0 +1,32 @@
+name: Convert Markdown to HTML and Minify JS
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          npm install -g markdown-cli
+          npm install -g uglify-js
+
+      - name: Convert Markdown to HTML
+        run: |
+          markdown-cli docs.md > docs.html
+          sed -i "s/const htmlDocs = '';/const htmlDocs = '`cat docs.html`';/" Source.js
+
+      - name: Minify JS and commit changes
+        run: |
+          uglifyjs Source.js --compress --mangle > prod.js
+          git config --global user.email "118825279+KUKHUA@users.noreply.github.com"
+          git config --global user.name "Github Actions - Auto fill."
+          git add prod.js
+          git commit -m "Minify JS with modified docs"
+          git push
+
