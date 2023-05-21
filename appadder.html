@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON App Complier</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.8.1/spectrum.min.css">
+  <style>
+    .json-editor {
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+    }
+  
+    .json-editor .item {
+      margin-bottom: 10px;
+    }
+  
+    .json-editor label {
+      font-weight: bold;
+    }
+  
+    .json-editor input[type="text"] {
+      width: 300px;
+    }
+  
+    .json-editor .color-input {
+      width: 200px;
+    }
+  
+    .json-editor .add-btn {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="json-editor">
+    <h3>App Complier:</h3>
+    <div class="item">
+      <label for="argName-input">Argument Name:</label>
+      <input type="text" id="argName-input">
+    </div>
+    <div class="item">
+      <label for="title-input">Title:</label>
+      <input type="text" id="title-input">
+    </div>
+    <div class="item">
+      <label for="icon-input">Icon:</label>
+      <input type="text" id="icon-input">
+    </div>
+    <div class="item">
+      <label for="hexColor-input">Hex Color:</label>
+      <input type="text" id="hexColor-input" class="color-input">
+    </div>
+    <div class="item">
+      <label for="url-input">URL:</label>
+      <input type="text" id="url-input">
+    </div>
+    <div class="item">
+      <label for="use-favicon-input">Use Favicon:</label>
+      <input type="checkbox" id="use-favicon-input">
+    </div>
+    <button id="add-btn" class="add-btn">Complie</button>
+  
+    <h3>Output:</h3>
+    <pre id="output"></pre>
+  </div>
+  
+  <script>
+    $(document).ready(function() {
+      var jsonObject = {};
+  
+      // Initialize color picker
+      $('#hexColor-input').spectrum({
+        type: 'color',
+        showInput: true,
+        preferredFormat: 'hex',
+        showPalette: true,
+        palette: [['#4287f5', '#bd8c91', '#f54257', '#7d5f5c', '#3d68ad', '#f0340e', '#f2dcea', '#f5b342', '#0e408f']]
+      });
+  
+      // Add a new item
+      $('#add-btn').click(function() {
+        var argName = $('#argName-input').val();
+        var title = $('#title-input').val();
+        var icon = $('#icon-input').val();
+        var hexColor = $('#hexColor-input').val();
+        var url = $('#url-input').val();
+        var useFavicon = $('#use-favicon-input').is(':checked');
+  
+        if (!jsonObject.apps) {
+          jsonObject.apps = {};
+        }
+  
+        if (useFavicon) {
+          icon = 'https://www.google.com/s2/favicons?domain=' + url;
+        }
+  
+        jsonObject.apps[argName] = {
+          title: title,
+          icon: icon,
+          hexColor: hexColor,
+          url: url
+        };
+  
+        var output = 'jsonAppObject.apps.' + argName + ' = ' + JSON.stringify(jsonObject.apps[argName]).replace(/"([^"]+)":/g, '$1:') + ';';
+
+        $('#output').text(output);
+      });
+    });
+  </script>
+</body>
+</html>
