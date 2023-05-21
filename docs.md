@@ -31,4 +31,5 @@ Shows the version. ex: *`about`*
 `papa_burger,`
 `crossy_road,`
 `jetpack (Jetpack Joyride),`
-`tiny_fish`
+`tiny_fish,`
+`flappy_bird`
