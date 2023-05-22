@@ -1,5 +1,5 @@
 // Made by KUKHUA
-const ver = "1.2.1";
+const ver = "1.3";
 
 // Create a new script element
 const script = document.createElement("script");
@@ -66,13 +66,14 @@ function cmd() {
   jsonAppObject.apps.dino = { title: "Dino", icon: "https://raw.githubusercontent.com/Radon-Games/Radon-Games-Assets/main/html/dinosaur/assets/default_100_percent/100-error-offline.png", hexColor: "#f2dcea", url: "https://rawcdn.githack.com/Radon-Games/Radon-Games-Assets/b465574811f6feeca2e8a7504c3869f065b4a7d6/html/dinosaur/index.html" };
   jsonAppObject.apps.subway = { title: "Subway Surfers", icon: "https://raw.githubusercontent.com/mark-deal/mark-deal.github.io/73bdb2d103ca2cae7b9274872da66de1c28404c6/images/subway.jpg", hexColor: "#f5b342", url: "https://rawcdn.githack.com/mark-deal/mark-deal.github.io/73bdb2d103ca2cae7b9274872da66de1c28404c6/subwaysurfers/index.html" };
   jsonAppObject.apps.uno = { title: "4 Colors", icon: "https://raw.githubusercontent.com/Radon-Games/Radon-Games-Assets/main/html/uno/favicon.ico", hexColor: "#0e408f", url: "https://rawcdn.githack.com/Radon-Games/Radon-Games-Assets/b465574811f6feeca2e8a7504c3869f065b4a7d6/html/uno/index.html" };
-  jsonAppObject.apps.retro_bowl = {title:"Retro-Bowl",icon:"https://raw.githubusercontent.com/3kh0/3kh0-Assets/main/retro-bowl/img/icon.jpg",hexColor:"#4d9118",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/retro-bowl/index.html"};
-  jsonAppObject.apps.papa_pizza = {title:"Papas Pizzaria",icon:"https://raw.githubusercontent.com/3kh0/3kh0-Assets/main/papaspizzaria/papaspizzaria.jpg",hexColor:"#c70001",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/papaspizzaria/index.html"};
-  jsonAppObject.apps.papa_burger = {title:"Papas Burgeria",icon:"https://raw.githubusercontent.com/3kh0/3kh0-Assets/main/papasburgeria/ico.png",hexColor:"#e1c396",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/papasburgeria/index.html"};
-  jsonAppObject.apps.crossy_road = {title:"Crossy Road",icon:"https://raw.githubusercontent.com/3kh0/3kh0-Assets/main/crossyroad/crossyroad.png",hexColor:"#69ceec",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/crossyroad/index.html"};
-  jsonAppObject.apps.jetpack = {title:"Jetpack Joyride",icon:"https://raw.githubusercontent.com/3kh0/3kh0-Assets/main/jetpack-joyride/splash.jpg",hexColor:"#9291b9",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/jetpack-joyride/index.html"};
-  jsonAppObject.apps.tiny_fish = {title:"Tiny Fishing",icon:"https://raw.githubusercontent.com/3kh0/3kh0-Assets/main/tiny-fishing/tiny-fishing.png",hexColor:"#572CCF",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/tiny-fishing/index.html"};
-  jsonAppObject.apps.flappy_bird = {title:"Flappy Bird",icon:"https://raw.githubusercontent.com/KUKHUA/a-v-c-blk/main/flappy-bird/assets/thumb.png",hexColor:"#4ec0ca",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/flappy-bird/index.html"};
+  jsonAppObject.apps.retro_bowl = {title:"Retro-Bowl",hexColor:"#4d9118",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/retro-bowl/index.html"};
+  jsonAppObject.apps.papa_pizza = {title:"Papas Pizzaria",hexColor:"#c70001",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/papaspizzaria/index.html"};
+  jsonAppObject.apps.papa_burger = {title:"Papas Burgeria",hexColor:"#e1c396",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/papasburgeria/index.html"};
+  jsonAppObject.apps.crossy_road = {title:"Crossy Road",hexColor:"#69ceec",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/crossyroad/index.html"};
+  jsonAppObject.apps.jetpack = {title:"Jetpack Joyride",hexColor:"#9291b9",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/jetpack-joyride/index.html"};
+  jsonAppObject.apps.tiny_fish = {title:"Tiny Fishing",hexColor:"#572CCF",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/tiny-fishing/index.html"};
+  jsonAppObject.apps.flappy_bird = {title:"Flappy Bird",hexColor:"#4ec0ca",url:"https://rawcdn.githack.com/KUKHUA/a-v-c-blk/446f257b3b88a9f8db1e3f1eaca4de03737c733f/flappy-bird/index.html"};
+  jsonAppObject.apps.hacker_news = {title:"Hacker News",icon:"https://hckrnews.com/favicon.ico",hexColor:"#ff6600",url:"https://hackerweb.app"};
   // Command input
   var commandIn = prompt("Command:");
   var parseApp;
@@ -98,16 +99,19 @@ function cmd() {
     // Set default info for later update
     let defTitle = "Desmos | Testing";
     let defIcon = "https://www.desmos.com/favicon.ico";
-    const parsedUrl = commandIn.replace("cloak-it ", "");
+    let parsedUrl = commandIn.replace("cloak-it ", "");
     
     // Parse input
+    let newUrl;
     if (jsonAppObject.apps[parsedUrl]) {
       newUrl = jsonAppObject.apps[parsedUrl].url;
-    }else {
-      newUrl = parsedURL;
+    } else {
+      newUrl = parsedUrl;
     }
-
+    
+    // Open window
     const win = window.open();
+    
     // Create cloaked iframe
     const iframe = win.document.createElement("iframe");
     iframe.style.width = "100vw";
@@ -119,7 +123,7 @@ function cmd() {
     iframe.src = newUrl;
     win.document.body.appendChild(iframe);
     win.document.title = defTitle;
-
+    
     // Set favicon
     let link = win.document.querySelector("link[rel~='icon']");
     if (!link) {
@@ -128,7 +132,7 @@ function cmd() {
       win.document.head.appendChild(link);
     }
     link.href = defIcon;
-  } 
+}
 
 // search command
 else if (commandIn.startsWith("search ")) {
