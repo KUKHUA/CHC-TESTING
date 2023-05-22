@@ -19,7 +19,8 @@ Shows the version. ex: *`about`*
 `piped,`
 `google,`
 `radiolise,`
-`searx`
+`searx,`
+`hacker_news`
 ## More game-ish
 `subway (Subway Surfers),`
 `bitlife,`
